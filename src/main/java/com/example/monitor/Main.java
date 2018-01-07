@@ -13,6 +13,11 @@ public class Main {
 
   public static void main(String[] args) {
     try {
+
+      System.out.println();
+      System.out.println("Start to monitoring " + PATH);
+      System.out.println();
+
       Task task = new LivenessTask(PATH, TIME);
       Monitor monitor = new SimpleMonitor(task);
       monitor.run();
